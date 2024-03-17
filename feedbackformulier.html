@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+
+<head>
+    <title>
+        feedbackformulier Tuur Steenssens
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Inleiding">Inleiding</a></li>
+            <li><a href="#Ingredi&euml;ntenlijst">Ingredi&euml;ntenlijst</a></li>
+            <li><a href="#bereiding">bereiding</a>
+            </li>
+            <li><a href="#Tips">Tips</a></li>
+            <li><a href="feedbackformulier.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <h1><mark>Pasta pesto</mark> van Tuur Steenssens</h1>
+
+    <img src="media/download.jpg" alt="Recept">
+    Dit is een afbeelding van het recept. Meer recepten vind je op <a href="https://njam.tv/recepten/pasta-pesto"
+        target="_blank">njam!</a>
+    <h1>Feedbackformulier</h1>
+
+    <form action="https://formspree.io/f/xzbnadgw" method="POST">
+
+        <!-- Persoonlijke gegevens -->
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="leeftijd">Leeftijd:</label>
+            <input type="number" id="leeftijd" name="leeftijd" min="18" max="120" required><br>
+
+            geslacht:
+            <br>
+            <input type="radio" id="man" name="geslacht" value="man" required>
+            <label for="man">Man</label><br>
+            <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+            <label for="vrouw">Vrouw</label><br>
+            <input type="radio" id="ander" name="geslacht" value="ander">
+            <label for="ander">Ander</label><br>
+
+        </fieldset>
+
+        <!-- Feedback over het recept -->
+        <fieldset>
+            <legend>Feedback over het recept</legend>
+
+            <label for="lekker">Was het recept lekker?</label><br>
+            <input type="checkbox" id="lekker" name="lekker" value="ja">
+            <label for="lekker">Ja</label><br>
+            <input type="checkbox" id="nietlekker" name="lekker" value="nee">
+            <label for="nietlekker">Nee</label><br>
+
+            <label for="waardering">Waardering:</label>
+            <select id="waardering" name="waardering">
+                <option value="5">Uitstekend</option>
+                <option value="4">Goed</option>
+                <option value="3">Redelijk</option>
+                <option value="2">Matig</option>
+                <option value="1">Slecht</option>
+            </select><br>
+
+            <label for="verbeteringen">Eventuele verbeteringen:</label><br>
+            <textarea id="verbeteringen" name="verbeteringen" rows="4" cols="50"></textarea><br>
+            <label for="favoriet">Voor wie heb je het gerecht gemaakt?</label><br>
+            <input type="text" id="favoriet" name="favoriet"><br>
+
+        </fieldset>
+
+        <!-- Submit-knop -->
+        <button type="submit">Verstuur</button>
+        <button type="reset">Formulier leegmaken</button>
+
+    </form>
+</header>
+<footer>
+    <p>Gemaakt door: Tuur Steenssens - Datum: <time datetime="2024-03-17">17 maart 2024</time></p>
+    <p>Vragen of suggesties? Stuur een e-mail naar <a
+            href="mailto:tuur.steenssens@ugent.be">tuur.steenssens@ugent.be</a></p>
+</footer>
+
+</html>
